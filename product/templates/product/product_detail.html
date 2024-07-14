@@ -1,0 +1,11 @@
+{% extends 'core/base.html' %}
+
+{% block container %}
+    <div class="row my-5">
+        <div class="col-sm-10 offset-sm-1 col-lg-8 offset-lg-2">
+            <h2 class="mb-3">{{ product.title }}</h2>
+            <img src="{{ product.image }}" alt="" class="w-100 img-thumbnail">
+            <p class="my-3 lead text-center">{{ product.detail }}</p>
+        </div>
+    </div>
+{% endblock container %}
