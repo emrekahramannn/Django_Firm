@@ -1,0 +1,90 @@
+{% extends 'core/base.html' %}
+
+{% block container-fluid %}
+    {% include 'page/components/home_carousel.html' %}
+    <div class="container-fluid mb-5" id="about">
+        <!-- hero content -->
+        <div class="row py-4">
+        <div class="col-sm-8 offset-sm-2 mt-3 p-0">
+            <div class="h-100 p-5 bg-body-tertiary border rounded-3 text-center">
+                <h2>Django Developers</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error qui
+                    facilis corrupti ex tempora repellat blanditiis deleniti molestiae
+                    molestias placeat!
+                </p>
+            </div>
+        </div>
+        </div>
+        <!-- hero content end -->
+        <!-- about us -->
+        <div class="row bg-dark text-light">
+        <div class="col-sm-6 ps-0">
+            <img src="http://picsum.photos/600/250" alt="" class="w-100" />
+        </div>
+        <div class="col-sm-6 d-flex flex-column justify-content-center align-items-start">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, autem?</p>
+            <p>Sequi nisi, voluptates veniam minima nesciunt eveniet? Itaque, eos voluptates!</p>
+        </div>
+        </div>
+        <!-- about us end -->
+    </div>
+{% endblock container-fluid %}
+
+{% block container %}
+    <!-- projects -->
+    <div class="row" id="projects">
+    <div class="col-sm-12">
+        <h2>Projects</h2>
+    </div>
+    <div class="col-sm-4 mb-3">
+        <div class="card">
+            <img
+                src="http://picsum.photos/400/250"
+                class="card-img-top"
+                alt=""
+            />
+            <div class="card-body">
+                <div class="card-title">Instagram</div>
+                <div class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, architecto.
+                </div>
+                <a href="#" class="btn btn-primary mt-3 block w-100">Read</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4 mb-3">
+        <div class="card">
+            <img
+                src="http://picsum.photos/400/250"
+                class="card-img-top"
+                alt=""
+            />
+            <div class="card-body">
+                <div class="card-title">Facebook</div>
+                <div class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, architecto.
+                </div>
+                <a href="#" class="btn btn-primary mt-3 block w-100">Read</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4 mb-3">
+        <div class="card">
+            <img
+                src="http://picsum.photos/400/250"
+                class="card-img-top"
+                alt=""
+            />
+            <div class="card-body">
+                <div class="card-title">Netflix</div>
+                <div class="card-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, architecto.
+                </div>
+                <a href="#" class="btn btn-primary mt-3 block w-100">Read</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- projects end -->
+{% endblock container %}

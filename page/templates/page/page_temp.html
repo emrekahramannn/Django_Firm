@@ -1,0 +1,37 @@
+{% extends 'core/base.html' %}
+
+{% block container-fluid %}
+<div class="container-fluid mt-0" id="about">
+    <div class="row">
+      <div class="col-sm-12 px-0 py-0">
+        <img src="https://picsum.photos/1200/450" alt="" class="w-100" />
+      </div>
+    </div>
+    <!-- hero content -->
+    {% include 'page/components/hero_content.html' %}
+    <!-- hero content end -->
+    <!-- about us -->
+    <div class="row bg-dark text-light">
+      <div class="col-sm-6 ps-0">
+        <img src="http://picsum.photos/600/250" alt="" class="w-100" />
+      </div>
+      <div
+        class="col-sm-6 d-flex flex-column justify-content-center align-items-start"
+      >
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi,
+          autem?
+        </p>
+        <p>
+          Sequi nisi, voluptates veniam minima nesciunt eveniet? Itaque, eos
+          voluptates!
+        </p>
+      </div>
+    </div>
+    <!-- about us end -->
+  </div>
+{% endblock container-fluid %}
+
+{% block container %}
+  {{ content | safe}}
+{% endblock container %}

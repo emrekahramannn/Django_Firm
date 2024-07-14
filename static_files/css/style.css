@@ -1,0 +1,25 @@
+@media (max-width: 767px) {
+    .navbar-collapse .navbar-nav .nav-link {
+        transition: all 0.5s ease-in-out;
+    }
+    .navbar-collapse .navbar-nav .nav-link:hover {
+        transform: translateX(20px);
+        color: rgba(255, 255, 255, 0.9);
+    }
+}
+
+#banner .col-md-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    #companies .col-sm {
+        overflow: hidden;
+    }
+    #companies img:hover {
+        transition: all 0.4s ease-in-out;
+        transform: scale(1.5);
+    }
+}  
